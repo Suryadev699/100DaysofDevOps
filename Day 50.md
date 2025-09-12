@@ -1,4 +1,4 @@
-## Day 50: 
+## Day 50: Set Resource Limits in Kubernetes Pods
 
 
 The Nautilus DevOps team has noticed performance issues in some Kubernetes-hosted applications due to resource constraints. To address this, they plan to set limits on resource utilization. Here are the details:
