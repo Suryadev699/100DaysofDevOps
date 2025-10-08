@@ -12,7 +12,11 @@ Deploy the code from web_app repository under /var/www/html on Storage Server, a
 LB server is already configured. You should be able to see the latest changes you made by clicking on the App button. Please make sure the required content is loading on the main URL https://<LBR-URL> i.e there should not be a sub-directory like https://<LBR-URL>/web_app etc.
 
 ## Solution:
-
+Pre-requisites:
+ - Install Plugins on Jenkins:
+   - Git Plugin
+   - Pipeline Plugin
+   - SSH Build Agents Plugin (if using SSH to connect to the slave node)
 1. Access Jenkins UI by clicking on the Jenkins button on the top bar. Login using username `admin` and password `Adm!n321`.
 2. Access Gitea UI by clicking on the Gitea button on the top bar. Login using username `sarah` and password `Sarah_pass123`. Under user `sarah`, you will find a repository named `web_app` that is already cloned on Storage server under `/var/www/html`.
 3. Add a slave node named `Storage Server`:
